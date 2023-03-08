@@ -11,7 +11,9 @@ body {
 [data-theme="dark"] body {
   background: #262626;
 }
-
+[data-theme="dark"] .text-muted {
+  color: white !important;
+}
 [data-theme="dark"] .ceweku {
   background-color: #262626 !important;
   border: solid white;
