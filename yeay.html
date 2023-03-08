@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="makasih yaak">
+    <title>maacii</title>
+    <!-- bootstrap 5.3.0-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/love.css" rel="stylesheet">
+    <link href="darkmode/dark-mode.css" rel="stylesheet">
+    <style>
+      .ceweku {
+        margin-top: 120px;
+      }
+    </style>
+  </head>
+  <body class="bg">
+    <section class="ceweku text-center p-4 rounded-5">
+    <div id="waktu" class="text-center"></div>
+    <p class="heart"></p>
+      <p>makasihhh dede udah mau sayang sama aa, maafin aa ya kalo kelakuan aa kaya anak kecil, suka ngambek ngambekan sama dede, sama suka nuduh ga jelas, aa ini eamng ga jelas juga ko😌
+      <br><img src="https://i.pinimg.com/originals/b8/c0/e6/b8c0e655123a28df6a83b6a3fb8edb92.gif" width="100px">
+      <br>Kalo misalnya aa sering buat dede badmood, aa minta maaf yaa, mulai dari yang disengaja sampai ngga disengaja
+      <br><a class="btn btn-outline-success rounded-5 btn-sm" href="index.html">balik lagi aja deh</a>
+      | <a class="btn btn-success rounded-5 btn-sm" href="next.html">mawu lanjut</a>
+      </p>
+      <hr>
+      <font class="text-center">pesannnn</font>
+      <div id="lblGreetings"></div>
+      <div class="container mt-2 text-center">
+          <input type="checkbox" class="btn-check" id="darkSwitch" checked autocomplete="off">
+          <label class="btn btn-dark btn-sm rounded-5" for="darkSwitch" data-aos-duration="2000"
+            data-aos="fade-up"><iconify-icon id="darkmode"></iconify-icon></label> 
+            <font id="tema"></font>
+            
+                    <marquee>dede tau wanita tercantik itu siapa?, wanita tercantik itu kamuu, kamu adalah wanita tercantik, terbaik yang ada didunia ini cumannn kamu. aa suka sama dede karena dede itu setia, pantang menyerah, dan juga tangguh.</marquee>
+        </div>
+    </section>
+    <img src="https://cliply.co/wp-content/uploads/2021/07/452105030_HEART_DOODLES_400.gif" width="120px">
+    <img src="https://i.pinimg.com/originals/87/0d/8e/870d8e4ebebdb53af3aae87198cdddf8.gif" width="120px" align="right">
+    <footer class="text-center">mede with ❤️ for you my girl</footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="darkmode/button_top.js"></script>
+<script src="darkmode/dark-mode-switch.js"></script>
+<script>
+  // fungsi satuaku adalah membuat angka 0 menjadi 00
+  var satuaku = n => {
+    return ('0' + n).slice(-2);
+  }
+
+  setInterval(() => {
+    var date = new Date();
+    var jam = satuaku(date.getHours());
+    var menit = satuaku(date.getMinutes());
+    var detik = satuaku(date.getSeconds());
+    var tampilWaktu = jam + ":" + menit + ":" + detik;
+
+    document.getElementById("waktu").innerHTML = tampilWaktu;
+  }, 1000);
+</script>
+<script>
+  setInterval(() => {
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 03)
+      greet = 'sweet dreams';
+    else if (hrs >= 03 && hrs <= 15)
+      greet = 'selamat pagii dede, semoga dede semangat yaa buat jalanin hidup dede, aa selalu disini, nemenin dede';
+    else if (hrs >= 15 && hrs <= 20)
+      greet = 'selamat sore dede, dede istirahat yaa, dede pasti capee, jadi harus istirahat yak';
+    else if (hrs >= 20 && hrs <= 24)
+      greet = 'selamat malam dede, mimpi indah yaa sayang, bobo lho pokoknya harus bobo';
+
+    document.getElementById('lblGreetings').innerHTML =
+      greet;
+  }, 1000);
+</script>
+</html>
