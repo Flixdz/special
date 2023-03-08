@@ -1,0 +1,48 @@
+@font-face {
+  font-family: SanFransisco;
+  src: url('font/SanFransisco.ttf');
+}
+.ceweku {
+  background: white;
+  background-position: center;
+  margin-top: 170px;
+  font-family: SanFransisco;
+  border: solid #262626;
+  transition: background 0.7s;
+}
+footer p {
+  margin-top: 200px;
+}
+png {
+  border-radius: 25px;
+}
+.typewriter h5 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: pink; }
+}
+
+.heart:before {
+  content: 'aa';
+}
+.heart:hover:before {
+  content: 'sayang dede♥️';
+}
+

@@ -1,0 +1,7 @@
+
+.heart:before {
+  content: 'aa';
+}
+.heart:hover:before {
+  content: 'sayang dede♥️';
+}
